@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
     "eslint:fix": "eslint \"src/**/*.{vue,ts,js,tsx}\" --fix",
     "prettier:fix": "prettier --write src/**",
     "stylelint:fix": "stylelint \"src/**/*.{css,scss,sass,vue}\" --fix"
@@ -17,14 +21,20 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.39.0",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
+    "@vitest/coverage-c8": "^0.25.3",
+    "@vue/tsconfig": "^0.1.3",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
+    "happy-dom": "^7.7.2",
     "postcss": "^8.4.19",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
+    "sass": "^1.56.1",
     "stylelint": "^14.15.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recess-order": "^3.0.0",
@@ -33,6 +43,7 @@
     "stylelint-config-tailwindcss": "^0.0.7",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
-    "vite": "^3.2.4"
+    "vite": "^3.2.4",
+    "vitest": "^0.25.3"
   }
 }
