@@ -1,7 +1,7 @@
 {
-  "name": "xu-component",
-  "version": "1.0.0",
-  "description": "",
+  "name": "simple-ui",
+  "version": "0.0.1",
+  "description": "一个及其简单的 UI 框架，用于学习",
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
@@ -15,8 +15,13 @@
     "stylelint:fix": "stylelint \"src/**/*.{css,scss,sass,vue}\" --fix",
     "lint-staged": "lint-staged"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ui",
+    "vue",
+    "vue-ui",
+    "component"
+  ],
+  "author": "yuechao.xu",
   "license": "ISC",
   "dependencies": {
     "vue": "^3.2.45"
