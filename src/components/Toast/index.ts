@@ -9,38 +9,28 @@ export interface ToastParams {
   time?: number;
   /** 追加到某个元素之后, 默认 document.body */
   appendTo?: string | HTMLElement;
-  /** 接受的提示信息 */
-  message?: string;
   /** 是否将接受的 message 转为 html 片段，默认为 false */
   dangerouslyUseHTMLString?: boolean;
 }
 
-export type ToastReturn = { close(): void };
+export interface ToastReturn {
+  close(): void;
+}
 
-export function Toast(message: string): ToastReturn;
-export function Toast(params: ToastParams): ToastReturn;
-export function Toast(params: string | ToastParams) {
-  let initParams: Required<ToastParams> = {
-    time: 1,
+export function Toast(message: string, otherParams?: ToastParams) {
+  const initParams: Required<ToastParams> = {
+    time: 2,
     appendTo: document.body,
     dangerouslyUseHTMLString: false,
-    message: "",
+    ...otherParams,
   };
-  if (typeof params === "string") {
-    initParams.message = params;
-  } else {
-    initParams = {
-      ...initParams,
-      ...params,
-    };
-  }
 
   const props: ToastMessageProps = {
-    message: initParams.message,
+    message,
     dangerouslyUseHTMLString: initParams.dangerouslyUseHTMLString,
   };
   const container = document.createElement("div");
-  container.classList.add("xu-toast");
+  container.classList.add("simple-toast");
   const vnode = createVNode(ToastMessage, props);
   let timeoutIndex = 0;
   render(vnode, container);
