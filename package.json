@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
@@ -11,7 +12,8 @@
     "test:coverage": "vitest --coverage",
     "eslint:fix": "eslint \"src/**/*.{vue,ts,js,tsx}\" --fix",
     "prettier:fix": "prettier --write src/**",
-    "stylelint:fix": "stylelint \"src/**/*.{css,scss,sass,vue}\" --fix"
+    "stylelint:fix": "stylelint \"src/**/*.{css,scss,sass,vue}\" --fix",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,7 @@
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.39.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vitejs/plugin-vue-jsx": "^2.1.1",
@@ -31,6 +34,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
     "happy-dom": "^7.7.2",
+    "husky": "^8.0.2",
     "postcss": "^8.4.19",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
