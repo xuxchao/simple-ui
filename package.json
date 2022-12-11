@@ -8,6 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
     "eslint:fix": "eslint \"src/**/*.{vue,ts,js,tsx}\" --fix",
@@ -54,6 +57,14 @@
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^3.2.4",
+    "vitepress": "1.0.0-alpha.29",
     "vitest": "^0.25.3"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }

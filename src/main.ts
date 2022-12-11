@@ -1,3 +1,5 @@
-import { Toast } from "./components/Toast";
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./common/style.scss";
 
-Toast(`你好，世界`);
+createApp(App).mount(document.body);
