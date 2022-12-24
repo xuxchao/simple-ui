@@ -4,6 +4,7 @@ export default defineConfig({
   title: "简单UI",
   description: "一个极其简单的组件库",
   themeConfig: {
+    outline: [2, 3],
     // 右上角的导航
     // nav: [{ text: "Toast", link: "/toast" }],
     sidebar: [
