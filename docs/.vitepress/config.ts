@@ -1,4 +1,4 @@
-import { defineConfig } from "vitePress";
+import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "简单UI",
