@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 16
           cache: pnpm
+      - run: curl -fsSL "https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linuxstatic-x64" -o /bin/pnpm; chmod +x /bin/pnpm;
       - run: pnpm install --frozen-lockfile
 
       - name: Build
