@@ -8,7 +8,7 @@
     >
       主要颜色
     </button>
-    <Teleport :to="teleportDom">
+    <Teleport to="body" :disabled="!props.teleported">
       <ul
         ref="ulRef"
         :style="{
@@ -42,9 +42,6 @@ const mouseUIOutsideDe = useDebounce(mouseUIOutside, 250);
 
 const hideOnClickItem = ref(false);
 const showOnClickButton = ref(false);
-const teleportDom = computed(() => {
-  return props.trigger ? document.body : dropDownRef.value;
-});
 const isShowPopper = computed(() => {
   if (props.trigger === "hover") {
     if (mouseButtonOutsideDe.value && mouseUIOutsideDe.value) {
