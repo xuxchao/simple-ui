@@ -2,7 +2,7 @@
 { title: "Preview" }
 ---
 
-# Toast
+# Preview
 
 ## 基本用法
 
@@ -12,9 +12,6 @@
 2. 鼠标拖拽移动图片的位置
 
 ```typescript
-Preview(urls: string | HTMLImage[], otherParams: PreviewParams)
-
-interface PreviewParams {
-}
+Preview(urls: string[])
 
 ```

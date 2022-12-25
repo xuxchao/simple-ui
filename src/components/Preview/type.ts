@@ -1,7 +1,7 @@
 import type { ExtractPropTypes, PropType } from "vue";
 import type ToastMessage from "./PreviewImage.vue";
 
-export type ToastMessageInstance = InstanceType<typeof ToastMessage>;
+export type PreviewImageInstance = InstanceType<typeof ToastMessage>;
 
 export const previewImageProps = {
   urls: {
