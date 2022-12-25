@@ -16,6 +16,8 @@ export function Preview(urls: string[], otherParams?: PreviewParams) {
   };
   const container = document.createElement("div");
   container.classList.add("simple-preview");
+  container.classList.add("z-50");
+  container.classList.add("fixed");
   const vnode = createVNode(PreviewImage, {
     ...props,
     onClose() {

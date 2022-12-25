@@ -2,7 +2,7 @@
   <div class="fixed">
     <div class="fixed top-0 left-0 right-0 bottom-0 bg-black/30"></div>
     <div
-      class="fixed w-full h-full flex justify-center items-center"
+      class="fixed top-0 left-0 w-full h-full flex justify-center items-center"
       @click.self="closeHandler"
     >
       <img

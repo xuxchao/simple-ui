@@ -6,20 +6,24 @@ export default defineConfig({
   base: "/simple-ui/",
   themeConfig: {
     outline: [2, 3],
-    // 右上角的导航
-    // nav: [{ text: "Toast", link: "/toast" }],
     sidebar: [
-      {
-        items: [{ text: "主题", link: "theme" }],
-      },
       {
         text: "组件",
         items: [
           { text: "Button", link: "/button" },
           { text: "Toast", link: "/toast" },
           { text: "DropDown", link: "/dropDown" },
+          { text: "Preview", link: "/preview" },
         ],
       },
+    ],
+    editLink: {
+      pattern: "https://github.com/mrxu0/simple-ui/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
+    },
+
+    socialLinks: [
+      { icon: "github", link: "https://github.com/mrxu0/simple-ui" },
     ],
   },
 });

@@ -37,12 +37,22 @@
 :hide-on-click="false"
 trigger="click"> </DropDown>
 
+```html
+<DropDown :placement="'bottom-start'" :hide-on-click="false" trigger="click">
+</DropDown>
+```
+
 单击出现，单击之后消失
 
 <DropDown
 :placement="'bottom-start'"
 :hide-on-click="true"
 trigger="click"> </DropDown>
+
+```html
+<DropDown :placement="'bottom-start'" :hide-on-click="true" trigger="click">
+</DropDown>
+```
 
 ### 经过出现，单击之后不消失
 
@@ -51,12 +61,22 @@ trigger="click"> </DropDown>
 :hide-on-click="false"
 trigger="hover"> </DropDown>
 
+```html
+<DropDown :placement="'bottom-start'" :hide-on-click="false" trigger="hover">
+</DropDown>
+```
+
 ### 经过出现，单击之后消失
 
 <DropDown
 :placement="'bottom-start'"
 :hide-on-click="true"
 trigger="hover"> </DropDown>
+
+```html
+<DropDown :placement="'bottom-start'" :hide-on-click="true" trigger="hover">
+</DropDown>
+```
 
 ## API 设计
 
@@ -66,3 +86,9 @@ trigger="hover"> </DropDown>
 | trigger       | 触发下拉行为                   | hover/click/contextmenu                              | hover  |
 | hide-on-click | 是否在单击菜单后隐藏菜单       | boolean                                              | true   |
 | teleported    | 是否将下拉列表插入至 body 元素 | boolean                                              | true   |
+
+## TODO
+
+- 接收内容的插槽
+- 不插入到 body 时候的展示
+- 测试用例
