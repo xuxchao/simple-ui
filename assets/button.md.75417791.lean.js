@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as o,a as n}from"./app.aa396d35.js";const x=JSON.parse('{"title":"Button","description":"","frontmatter":{"title":"Button"},"headers":[],"relativePath":"button.md"}'),a={name:"button.md"},s=n("",4),u=[s];function b(r,i,d,p,g,c){return e(),o("div",null,u)}const h=t(a,[["render",b]]);export{x as __pageData,h as default};
