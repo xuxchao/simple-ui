@@ -4,6 +4,7 @@ export default defineConfig({
   title: "简单UI",
   description: "一个极其简单的组件库",
   base: "/simple-ui/",
+  outDir: "../dist",
   themeConfig: {
     outline: [2, 3],
     sidebar: [
